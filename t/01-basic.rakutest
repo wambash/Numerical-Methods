@@ -1,6 +1,0 @@
-use Test;
-use Numerical::Methods;
-
-pass "replace me";
-
-done-testing;

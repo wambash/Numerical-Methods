@@ -20,7 +20,7 @@
   },
   "resources": [
   ],
-  "source-url": "git@github.com:wambash/Numerical-Methods.git",
+  "source-url": "https://github.com/wambash/Numerical-Methods.git",
   "tags": [
     "numerical",
     "optimization",

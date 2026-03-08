@@ -1,2 +1,5 @@
 .precomp/
+t/.precomp/
+t/lib/
+.prove6/
 /Numerical-Methods-*
