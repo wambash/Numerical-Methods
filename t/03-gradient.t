@@ -5,7 +5,7 @@
 
 use lib 'lib';
 use Test;
-use Numerical::Methods;
+use Numerical::Methods::Gradient;
 
 plan 4;
 
