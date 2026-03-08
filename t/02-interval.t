@@ -24,12 +24,12 @@ subtest 'fibonacci-init', {
     plan 6;
 
     with fibonacci-init(1,3, &g, @fibs[3]/@fibs[4]) {
-        is .a, 1;
-        is .b, 3;
-        is .c, 5/3;
-        is .d, 7/3;
-        is .fc, g(.c);
-        is .fd, g(.d);
+        is .a, 1, 'state.a = 1';
+        is .b, 3, 'state.b = 3';
+        is .c, 5/3, 'state.c = 5/3';
+        is .d, 7/3, 'state.d = 7/3';
+        is .fc, g(.c), 'state.fc = g(c)';
+        is .fd, g(.d), 'state.fd = g(d)';
     }
 }
 
@@ -37,12 +37,12 @@ subtest 'fibonacci-step', {
     plan 6;
     my $s = fibonacci-init(1,3, &g, @fibs[3]/@fibs[4]);
     with fibonacci-step($s) {
-        is .a, 1;
-        is .b, $s.d;
-        is .c - .a, .b - .d;
-        is .d, $s.c;
-        is .fc, g(.c);
-        is .fd, $s.fc;
+        is .a, 1, 'state.a unchanged';
+        is .b, $s.d, 'state.b = old.d';
+        is .c - .a, .b - .d, 'symmetric spacing';
+        is .d, $s.c, 'state.d = old.c';
+        is .fc, g(.c), 'state.fc = g(c)';
+        is .fd, $s.fc, 'state.fd = old.fc (recycled!)';
     }
 }
 
