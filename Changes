@@ -1,4 +1,6 @@
 Revision history for Numerical::Methods
 
 {{$NEXT}}
-    - Initial version
+    - Initial release with Newton, Fibonacci, Golden Section, and Gradient methods
+    - All methods implemented as lazy iterators
+    - Comprehensive test suite with 22 tests
