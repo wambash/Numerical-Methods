@@ -154,17 +154,20 @@ use Numerical::Methods::Gradient;
 
 sub EXPORT {
     %(
+        # Newton's method
         '&newton-step'          => &newton-step,
         '&newton-seq'           => &newton-seq,
         '&find-zero'            => &find-zero,
 
         # Fibonacci method
         '@fibs'                 => @fibs,
+        '&fibonacci-intervals'  => &fibonacci-intervals,
         '&fibonacci-min'        => &fibonacci-min,
 
         # Golden Section method
         '&GOLDEN_RATIO'         => &GOLDEN_RATIO,
         '&GOLDEN_SECTION'       => &GOLDEN_SECTION,
+        '&golden-section-intervals' => &golden-section-intervals,
         '&golden-section-min'   => &golden-section-min,
 
         # Gradient descent
