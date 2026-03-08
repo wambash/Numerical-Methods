@@ -1,5 +1,3 @@
-unit module Numerical::Methods;
-
 # Numerical methods for optimization
 # All methods implemented as lazy iterators
 #
@@ -14,7 +12,6 @@ use Numerical::Methods::Gradient;
 
 sub EXPORT {
     %(
-        # Newton's method
         '&newton-step'          => &newton-step,
         '&newton-seq'           => &newton-seq,
         '&find-zero'            => &find-zero,

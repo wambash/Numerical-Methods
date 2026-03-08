@@ -13,11 +13,14 @@
   "name": "Numerical::Methods",
   "perl": "6.d",
   "provides": {
-    "Numerical::Methods": "lib/Numerical/Methods.rakumod"
+    "Numerical::Methods": "lib/Numerical/Methods.rakumod",
+    "Numerical::Methods::Gradient": "lib/Numerical/Methods/Gradient.rakumod",
+    "Numerical::Methods::Interval": "lib/Numerical/Methods/Interval.rakumod",
+    "Numerical::Methods::Newton": "lib/Numerical/Methods/Newton.rakumod"
   },
   "resources": [
   ],
-  "source-url": "https://github.com/AP4OM/NumericalMethods-Raku.git",
+  "source-url": "",
   "tags": [
     "numerical",
     "optimization",
