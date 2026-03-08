@@ -5,7 +5,7 @@
 
 use lib 'lib';
 use Test;
-use Numerical::Methods;
+use Numerical::Methods::Newton;
 
 plan 4;
 

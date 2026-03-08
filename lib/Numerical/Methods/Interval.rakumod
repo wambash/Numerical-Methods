@@ -7,7 +7,7 @@ unit module Numerical::Methods::Interval;
 our @fibs is export = 0, 1, *+* ... *;
 
 class FibonacciState {
-    has ($.a, $.b, $.c, $.d, $.fc,$.fd, &.f);
+    has ($.a, $.b, $.c, $.d, $.fc, $.fd, &.f);
 }
 
 
