@@ -1,0 +1,32 @@
+{
+  "api": "6c",
+  "auth": "zef:AP4OM",
+  "authors": [
+    "Jan Krňávek <krnavek@utb.cz>"
+  ],
+  "build-depends": [
+  ],
+  "depends": [
+  ],
+  "description": "Numerical methods for optimization (Newton, Fibonacci, Golden Section, Gradient)",
+  "license": "Artistic-2.0",
+  "name": "Numerical::Methods",
+  "perl": "6.d",
+  "provides": {
+    "Numerical::Methods": "lib/Numerical/Methods.rakumod"
+  },
+  "resources": [
+  ],
+  "source-url": "https://github.com/AP4OM/NumericalMethods-Raku.git",
+  "tags": [
+    "numerical",
+    "optimization",
+    "newton",
+    "fibonacci",
+    "gradient"
+  ],
+  "test-depends": [
+    "Test"
+  ],
+  "version": "0.1.0"
+}
